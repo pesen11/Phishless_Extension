@@ -413,7 +413,7 @@ const getURL = function () {
 
   async function loadModel() {
     var m = await tf.loadLayersModel(
-      "https://github.com/pesen11/Phishless_Extension/blob/main/CNN-LSTM/phishv2/model.json"
+      "https://raw.githubusercontent.com/pesen11/Phishless_Extension/main/CNN-LSTM/phishv2/model.json"
     );
     console.log("model loaded");
     return m;
