@@ -1,0 +1,27 @@
+{
+  "name": "PhishLess",
+  "version": "1.0.01",
+  "description": "A phishing detector plugin",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "webNavigation",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["js/jquery.js", "js/background.js", "js/randomforest.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "plugin_ui.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery.js", "js/features.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
