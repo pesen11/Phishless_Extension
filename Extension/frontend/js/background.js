@@ -4,7 +4,7 @@ var isPhish = {};
 
 function fetchLive(callback) {
   $.getJSON(
-    "https://raw.githubusercontent.com/pesen11/Major/main/json_files/classifierRF.json",
+    "https://raw.githubusercontent.com/pesen11/Phishless_Extension/main/Extension/json%20files/classifierRF.json",
     function (data) {
       chrome.storage.local.set(
         { cache: data, cacheTime: Date.now() },

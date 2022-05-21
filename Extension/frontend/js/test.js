@@ -1,10 +1,10 @@
 function test_model() {
   $.getJSON(
-    "https://raw.githubusercontent.com/pesen11/Major/main/json_files/classifier.json",
+    "https://raw.githubusercontent.com/pesen11/Phishless_Extension/main/Extension/json%20files/classifierRF.json",
     function (clfdata) {
       var rf = random_forest(clfdata);
       $.getJSON(
-        "https://raw.githubusercontent.com/pesen11/Major/main/json_files/testdata.json",
+        "https://raw.githubusercontent.com/pesen11/Phishless_Extension/main/Extension/json%20files/testdataRF.json",
         function (testdata) {
           var X = testdata["X_test"];
           var y = testdata["y_test"];

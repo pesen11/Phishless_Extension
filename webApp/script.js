@@ -124,7 +124,7 @@ import * as tf from "@tensorflow/tfjs";
 
 async function loadModel() {
   var m = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/pesen11/Major/main/phishv2/model.json"
+    "https://github.com/pesen11/Phishless_Extension/blob/main/CNN-LSTM/phishv2/model.json"
   );
   console.log("model loaded");
   return m;
